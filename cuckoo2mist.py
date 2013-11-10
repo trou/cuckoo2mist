@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+cuckoo2mist.py
+
+Created by Philipp Trinius on 2013-11-10.
+Copyright (c) 2013 pi-one.net . All rights reserved.
+"""
+
+
 import re
 import os, sys
 import getopt

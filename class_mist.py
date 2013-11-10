@@ -1,5 +1,12 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# encoding: utf-8
+"""
+class_mist.py
+
+Created by Philipp Trinius on 2013-11-10.
+Copyright (c) 2013 pi-one.net . All rights reserved.
+"""
+
 
 import os
 import sys

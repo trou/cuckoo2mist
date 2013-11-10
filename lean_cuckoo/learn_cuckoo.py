@@ -1,5 +1,11 @@
-#!/opt/local/bin/python2.7
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+learn_cuckoo.py
 
+Created by Philipp Trinius on 2013-11-10.
+Copyright (c) 2013 pi-one.net . All rights reserved.
+"""
 import os
 import json
 import sys

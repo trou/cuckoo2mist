@@ -1,5 +1,11 @@
-#!/usr/bin/python
-#-*- coding: utf-8 -*-
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+thread_mist.py
+
+Created by Philipp Trinius on 2013-11-10.
+Copyright (c) 2013 pi-one.net . All rights reserved.
+"""
 
 import sys
 import os

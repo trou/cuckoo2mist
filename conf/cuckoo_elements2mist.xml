@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- keep in mind that new attributes have been added to existing elements -->
-
 <elements2mist>
 	
 <!-- ================================ hooking section ================================= -->
