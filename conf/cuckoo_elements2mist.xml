@@ -126,6 +126,7 @@
  			<ThreadHandle type="type_hex"/>
 		</NtResumeThread>
 		
+
 	</threading>
  	
 <!-- ================================ process section ================================= -->
@@ -431,7 +432,12 @@
  			<Handle type="type_hex"/>
  			<ValueName type="type_string"/>
 		</RegQueryValueExW>
- 	
+        
+        <NtOpenKey mist="12">
+			<DesiredAccess type="type_integer"/>
+ 			<KeyHandle type="type_hex"/>
+		</NtOpenKey>
+        
 	</registry>
 
 <!-- ================================ filesystem section ================================= -->
@@ -488,5 +494,30 @@
 		</DeviceIoControl>
 	
 	</device>
-
+<!-- ================================ virtual memory ==================================-->
+    <memory mist="0c">
+        <NtOpenSection mist="01">
+            <DesiredAccess type="type_integer"/>
+            <ObjectAttributes type="type_string"/>
+            <SectionHandle type="type_hex"/>
+       </NtOpenSection>
+    
+        <NtCreateSection mist="02">
+            <DesiredAccess type="type_integer"/>
+            <FileHandle type="type_hex"/>
+            <ObjectAttributes type="type_string"/>
+            <SectionHandle type="type_hex"/>
+        </NtCreateSection>
+        
+        <NtAllocateVirtualMemory mist="03">
+            <BaseAddress  type="type_hex"/>
+        </NtAllocateVirtualMemory>
+        
+    </memory>
+<!-- ================================ socket ==================================-->
+    <socket mist="0d">
+        <WSAStartup mist="01">
+            <VersionRequested type="type_hex"/>
+        </WSAStartup>
+    </socket>
 </elements2mist>
