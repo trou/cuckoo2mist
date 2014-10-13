@@ -51,7 +51,7 @@ class mistit(object):
 		self.behaviour_report = ''
 
         def set_report(self, report_data):
-                return json.load(report_data)
+                return json.loads(report_data)
 
 	def read_report(self, freport):
 		json_data=open(freport, "r")
