@@ -34,7 +34,7 @@ import hashlib
 import xml.etree.ElementTree as ET
 import glob
 
-from thread_mist import th_seq2mist
+from cuckoo2mist.thread_mist import th_seq2mist
 
 max_threads	= 10
 user_interrupt	= False
