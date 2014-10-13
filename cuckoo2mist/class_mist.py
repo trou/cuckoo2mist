@@ -50,6 +50,8 @@ class mistit(object):
 		self.missing = {}
 		self.behaviour_report = ''
 
+        def set_report(self, report_data):
+                return json.load(report_data)
 
 	def read_report(self, freport):
 		json_data=open(freport, "r")
@@ -67,10 +69,14 @@ class mistit(object):
 			self.errormsg = 'Could not parse the behaviour report. (%s)' % e
 			return False		
 
+
+        def result(self):
+                return self.mist.getvalue()
+
 	def write(self, outputfile):
 		try:
 			w_file = file(outputfile, 'w')
-			w_file.write(self.mist.getvalue())
+			w_file.write(self.result())
 			w_file.flush()
 			w_file.close()
 		except Exception, e:
