@@ -164,7 +164,7 @@ class mistit(object):
 	
 		
 	def convert_thread(self, pid, tid, api_calls):
-		self.mist.write( '# process ' + pid + ' thread ' + tid + ' #\n' )
+		self.mist.write( '# process ' + str(pid) + ' thread ' + str(tid) + ' #\n' )
 		for api_call in api_calls:
 			arguments 	= api_call['arguments']
 			category 	= api_call['category']
