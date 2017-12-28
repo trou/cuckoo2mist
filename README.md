@@ -3,8 +3,7 @@ About
 This repository is a fork of http://sourceforge.net/p/cuckoo2mist/
 Its original author is Philipp Trinius.
 
-This fork aims at being easier to use and deploy, eventually it will be
-submitted upstream.
+This fork aimed at being easier to use and deploy, but is currently **UNMAINTAINED**.
 
 Original description :
 The Malware Instruction Set (MIST) is a representation for monitored behavior
